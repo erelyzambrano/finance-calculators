@@ -4,7 +4,7 @@
 
 @layer base {
   html {
-    @apply bg-cream text-ink font-sans;
+    @apply bg-pale text-navy font-sans;
   }
 
   h1, h2, h3 {
@@ -24,7 +24,7 @@
   }
 
   label {
-    @apply text-sm uppercase tracking-widest text-ink-mute;
+    @apply text-sm uppercase tracking-widest text-navy-mute;
   }
 }
 
@@ -34,11 +34,11 @@
   }
 
   .btn-primary {
-    @apply px-4 py-2 bg-forest text-white rounded-sm hover:bg-forest-dark transition-colors text-sm font-medium;
+    @apply px-4 py-2 bg-blue text-white rounded-sm hover:bg-blue-dark transition-colors text-sm font-medium;
   }
 
   .input-field {
-    @apply w-full px-3 py-2 border border-border rounded-sm focus:outline-none focus:ring-2 focus:ring-forest focus:border-transparent bg-white;
+    @apply w-full px-3 py-2 border border-border rounded-sm focus:outline-none focus:ring-2 focus:ring-mid focus:border-transparent bg-white;
   }
 
   .divider {
@@ -46,7 +46,7 @@
   }
 
   .eyebrow {
-    @apply text-xs uppercase tracking-widest text-ink-mute font-medium;
+    @apply text-xs uppercase tracking-widest text-navy-mute font-medium;
   }
 }
 
