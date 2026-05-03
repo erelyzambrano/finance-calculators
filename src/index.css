@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply bg-cream text-ink font-sans;
+  }
+
+  h1, h2, h3 {
+    @apply font-fraunces italic font-bold;
+  }
+
+  h1 {
+    @apply text-4xl;
+  }
+
+  h2 {
+    @apply text-2xl;
+  }
+
+  h3 {
+    @apply text-xl;
+  }
+
+  label {
+    @apply text-sm uppercase tracking-widest text-ink-mute;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white rounded-sm border border-border shadow-warm p-6;
+  }
+
+  .btn-primary {
+    @apply px-4 py-2 bg-forest text-white rounded-sm hover:bg-forest-dark transition-colors text-sm font-medium;
+  }
+
+  .input-field {
+    @apply w-full px-3 py-2 border border-border rounded-sm focus:outline-none focus:ring-2 focus:ring-forest focus:border-transparent bg-white;
+  }
+
+  .divider {
+    @apply border-t border-border;
+  }
+
+  .eyebrow {
+    @apply text-xs uppercase tracking-widest text-ink-mute font-medium;
+  }
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' seed='2' /%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: -1;
+}
